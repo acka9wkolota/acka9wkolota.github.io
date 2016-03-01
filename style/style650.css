@@ -1,0 +1,41 @@
+@media screen and (max-width: 650px) {
+	
+
+.navigation-logo {
+	display: none;
+}
+
+.navigation-list {
+	max-width: 436px;
+	float: none;
+	margin: auto;
+}
+
+.navigation-list li {
+}
+
+.search-panel {
+	height: 122px;
+	text-align: center;
+}
+
+#search-form {
+	float: none;
+}
+
+#search-input {
+	float: none;
+}
+
+.share {
+	float: none;
+
+}
+
+.big-image {
+	width: auto;
+	height: 102%;
+}
+
+
+}
