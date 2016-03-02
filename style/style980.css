@@ -1,7 +1,7 @@
 @media screen and (max-width: 980px) {
 
 .search-panel {
-	width: 95%;
+	width: 90%;
 }
 
 #search-input {
@@ -9,7 +9,7 @@
 }
 
 .content {
-	width: 95%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -41,7 +41,9 @@
 	left: 20%;
 }
 
-.triple-slider li {
+.triple-slider {
+	width: calc(100% + 20px);
+	margin-left: -10px;
 }
 
 .news-main-part {
