@@ -31,12 +31,8 @@ button, input:focus {
 
 /*-----------------------*/
 
-.dropdown-button {
-
-}
-
-.dropdown-button:hover, .dropdown-button:focus {
-	background-color: #3e8e41;
+.open > .dropdown-menu {
+  display: block;
 }
 
 .dropdown {
@@ -82,7 +78,6 @@ button, input:focus {
 }
 
 .logo {
-	width: 210px;
 	height: 100%;
 	float: left;
 }
@@ -129,7 +124,7 @@ h1 {
 	margin-right: 10px;
 }
 
-#upper-dropdown-button {
+.upper-dropdown-button {
 	width: 100%;
 	height: 100%;
 	background-color: white;
@@ -167,13 +162,13 @@ h1 {
 	right: 12px;
 }
 
-#upper-dropdown-content {
+.upper-dropdown-content {
 	background-color: white;
 	width: 100%;
 	border: 1px solid #d8d8d8;
 }
 
-#upper-dropdown-content a {
+.upper-dropdown-content a {
 	height: 40px;
 	font-family: "NexaBold";
 	font-size: 11pt;
@@ -199,7 +194,7 @@ h1 {
 
 .navigation-logo {
 	width: 80px;
-	height: 100%;
+	height: 66px;
 	text-align: center;
 	float: left;
 }
@@ -263,13 +258,12 @@ h1 {
 }
 
 .quicklinks	{
-	float: right;
 	font-family: "NexaBold";
 	font-size: 11pt;
 	color: white;
 	line-height: 66px;
 	padding: 0px 10px;
-	/*border-right: 1px solid #767676;*/
+	display: inline-block;
 }
 
 .quicklinks:after {
@@ -280,12 +274,12 @@ h1 {
 }
 
 #quicklinks-menu-dropdown {
-	float: right;
+	display: inline-block;
 	padding: 0px 10px;
 	height: 100%;
 }
 
-#quicklinks-menu-dropdown-button {
+.quicklinks-menu-dropdown-button {
 	background: none;
 	border: none;
 	font-family: "NexaBold";
@@ -318,12 +312,12 @@ h1 {
 	right: -13px;
 }
 
-#quicklinks-menu-dropdown-content {
+.quicklinks-menu-dropdown-content {
 	width: calc(100% - 10px);
 	background-color: white;
 }
 
-#quicklinks-menu-dropdown-content a {
+.quicklinks-menu-dropdown-content a {
 	height: 40px;
 	font-family: "NexaBold";
 	font-size: 11pt;
@@ -377,13 +371,16 @@ h1 {
 	float: right;
 	display: inline-block;
 	height: 100%;
-	width: 300px;
 }
 
 .share li {
 	display: inline-block;
 	height: 100%;
 	padding-left: 15px;
+}
+
+.share li:first-child {
+	padding-left: 0;
 }
 
 .share li a {
@@ -396,21 +393,21 @@ h1 {
 	line-height: 66px;
 }
 
-.share li a span:before {
+.share li a:before {
 	font-family: "icons";
 	padding-right: 5px;
 }
 
-#twitter span:before {
+#twitter:before {
 	content: "\e809";
 }
-#facebook span:before {
+#facebook:before {
 	content: "\e806";
 }
-#rss span:before {
+#rss:before {
 	content: "\e808";
 }
-#mail span:before {
+#mail:before {
 	content: "\e805";
 }
 
@@ -913,19 +910,10 @@ h1 {
 	color: #474747;
 }
 
-/*	background: -webkit-linear-gradient(left, transparent 50%, #474747 50%);
-	background: -moz-linear-gradient(left, transparent 50%, #474747 50%);
-	background: -o-linear-gradient(left, transparent 50%, #474747 50%);
-	background: -ms-linear-gradient(left, transparent 50%, #474747 50%);*/
 .sidebar-artciles-list-article {
-	border-bottom: 2px;
-	border-style: solid;
-	-webkit-border-image: -webkit-linear-gradient(bottom, #d9d9d9 50%, #f5f5f5 50%);
-    -moz-border-image:
-	-moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;    
-    -o-border-image:
-	-o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
-    border-image:linear-gradient(bottom, #d9d9d9 50%, #f5f5f5 50%);
+	border-top: 1px solid #d9d9d9;
+	border-bottom: 1px solid #f5f5f5;
+	padding: 10px 0;
 }
 
 .sidebar-artciles-list-article span {
@@ -945,8 +933,12 @@ h1 {
 	padding-right: 10px;
 }
 
-.sidebar-artciles-list-article p:before:first-child {
-	visibility: hidden;
+.sidebar-artciles-list-article:first-child {
+	border-top: none;
+}
+
+.sidebar-artciles-list-article:last-child {
+	border-bottom: none;
 }
 
 .sidebar-counters {
@@ -976,4 +968,8 @@ h1 {
 
 .footer-navigation-list {
 	float: right;
+}
+
+#bottom-logo {
+	height: 66px;
 }

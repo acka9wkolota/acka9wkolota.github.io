@@ -9,10 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="style/style650.css">
 	<link rel="stylesheet" type="text/css" href="style/style480.css">
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
-	<script type="text/javascript" src="script/jquery.js"></script>
-	<script src="script/dropdown.js"></script>
+	<link rel="stylesheet" type="text/css" href="vendor/dropdown.css">
+	<script src="script/jquery.js"></script>
 	<script src="script/slick_ini.js"></script>
 	<script src="vendor/slick/slick.min.js"></script>
+	<script src="vendor/dropdown.js"></script>
 
 </head>
 <body>
@@ -22,38 +23,38 @@
 				<div class="orange-g">g</div>
 				<h1>Good Inc.</h1>
 			</div>
-			<div class="dropdowns">
+			<div class="dropdowns">			
 				<div class="dropdown" id="upper-dropdown">
-					<button data-feature="dropdown" class="dropdown-button" id="upper-dropdown-button">Dropdown<div class="upper-dropdown-up-down-arrows"></div></button>
-					<div class="dropdown-content" id="upper-dropdown-content">
-						<a href="#">lul</a>
-						<a href="#">lol</a>
-						<a href="#">lyl</a>
-					</div>
-				</div>				
+					<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="upper-dropdown-button">Dropdown<div class="upper-dropdown-up-down-arrows"></div></button>
+					<ul class="dropdown-content dropdown-menu upper-dropdown-content" aria-labelledby="dLabel">
+						<li><a href="#">lul</a></li>
+						<li><a href="#">lol</a></li>
+						<li><a href="#">lyl</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="left-part-cut">
 		<div class="navigation-panel">
 			<div class="navigation-logo"></div>
-			<ul class="navigation-list">
+			<nav><ul class="navigation-list">
 				<li><a href="#">Portfolio</a></li>
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Staff</a></li>
 				<li><a href="#">Articles</a></li>
 				<li><a href="#">Contact</a></li>
-			</ul>
+			</nav></ul>
 			<div class="quicklinks-menu">	
+				<a href="#" class="quicklinks">Quicklinks</a>
 				<div class="dropdown" id="quicklinks-menu-dropdown">
-					<button data-feature="dropdown" class="dropdown-button" id="quicklinks-menu-dropdown-button">Select from dropdown<div class="dropdown-up-down-arrows"></div></button>
-					<div class="dropdown-content" id="quicklinks-menu-dropdown-content">
+					<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="quicklinks-menu-dropdown-button">Select from dropdown<div class="dropdown-up-down-arrows"></div></button>
+					<ul class="dropdown-content dropdown-menu quicklinks-menu-dropdown-content" aria-labelledby="dLabel">
 						<a href="#">lol</a>
 						<a href="#">lel</a>
 						<a href="#">lal</a>
-					</div>
+					</ul>
 				</div>		
-				<a href="#" class="quicklinks">Quicklinks</a>
 			</div>
 		</div>
 	</div>
@@ -61,10 +62,10 @@
 		<form id="search-form"><input type="text" id="search-input" placeholder="Search something here"><button id="search-button"></button></form>
 		<div class="dropbox-sear"></div>
 		<ul class="share">
-			<li><a href="#" id="twitter"><span></span>Twitter</a></li>	
-			<li><a href="#" id="facebook"><span></span>Facebook</a></li>
-			<li><a href="#" id="rss"><span></span>Rss</a></li>
-			<li><a href="#" id="mail"><span></span>Mail</a></li>		
+			<li><a href="#" id="twitter">Twitter</a></li>	
+			<li><a href="#" id="facebook">Facebook</a></li>
+			<li><a href="#" id="rss">Rss</a></li>
+			<li><a href="#" id="mail">Mail</a></li>		
 		</ul>
 	</div>	
 	<div class="content">
@@ -196,7 +197,7 @@
 	</div>
 	<div class="footer">
 		<div class="left-part-cut"><div class="navigation-panel">
-			<div class="logo">
+			<div class="logo clearfix" id="bottom-logo">
 				<div class="orange-g">g</div>
 				<h1>Good Inc.</h1>
 			</div>

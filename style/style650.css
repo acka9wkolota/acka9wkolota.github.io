@@ -6,21 +6,18 @@
 }
 
 .navigation-list {
-	max-width: 436px;
 	float: none;
 	margin: auto;
 }
 
-.navigation-list li {
-}
-
 .search-panel {
-	height: 122px;
+	height: 132px;
 	text-align: center;
 }
 
 #search-form {
 	float: none;
+	height: 66px;
 }
 
 #search-input {
@@ -29,13 +26,18 @@
 
 .share {
 	float: none;
-
+	height: 66px;
 }
 
 .big-image {
 	width: auto;
 	height: 102%;
 }
+
+.triple-slider-buttons {
+	display: none;
+}
+
 
 
 }
