@@ -56,6 +56,25 @@ button, input:focus {
 
 .dropdown-visible {display:block;}
 
+.switcher {
+	width: 66px;
+	height: 66px;
+	border: none;
+	background-color: transparent;
+	display: none;
+}
+
+.switcher:after {
+	content: "\e810";
+	font-family: "icons";
+	color: white;
+	font-size: 18pt;
+}
+
+.switcher-show {
+	display: block !important;
+}
+
 /*-----------------------*/
 
 

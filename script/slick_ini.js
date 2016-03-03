@@ -24,7 +24,6 @@ $(document).ready(function(){
 
 	$(function() {
 		$(window).resize(function() {
-			// var mq = window.matchMedia( "(min-width: 500px)" );
 			var mq1020 = window.matchMedia( "(min-width: 1020px)" ).matches;
 			var mq980 = window.matchMedia( "(min-width: 980px)" ).matches;
 			if (mq1020) {

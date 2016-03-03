@@ -18,7 +18,12 @@
 	display: none;
 }
 
+.switcher {
+	display: block;
+}
+
 .navigation-list {
+	display: none;
 	margin: auto;
 	float: none;
 	width: 150px;
@@ -35,6 +40,7 @@
 }
 
 .quicklinks-menu {
+	display: none;
 	width: 200px;
 	position: static;
 	height: 132px;
